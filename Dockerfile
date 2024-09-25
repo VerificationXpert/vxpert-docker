@@ -62,6 +62,12 @@ pip install cocotb cocotbext-axi cocotbext-spi pytest pytest-cov && \
 pip install cocotb-test && \
 pip install cookiecutter
 
+# Install Corsair register tool
+RUN \
+python3 -m pip install --upgrade pip && \
+pip install corsair
+
+
 
 # Set environment variables
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
