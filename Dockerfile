@@ -58,7 +58,7 @@ rm -rf /var/lib/apt/lists/*
 # Install Cocotb, pytest, and other Python tools for verification
 RUN \
 python3 -m pip install --upgrade pip && \
-pip install cocotb cocotbext-axi cocotbext-spi cocotbext.uart pytest pytest-cov && \
+pip install cocotb cocotbext-axi cocotbext-spi cocotbext-uart pytest pytest-cov && \
 pip install cocotb-test && \
 pip install cookiecutter
 
